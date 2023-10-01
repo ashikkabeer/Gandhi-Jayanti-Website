@@ -1,15 +1,26 @@
 @keyframes example {
-  0%   {background-color: red;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: #F9F6EE;}
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
+
+.blur-text {
+  filter: blur(10px); /* Initial blur value */
+  animation: removeBlur 1s ease-in 1s forwards; /* Apply the animation */
+}
+
+@keyframes removeBlur {
+  to {
+      filter: blur(0); /* Remove the blur effect after 1 second */
+  }
+}
+
 
 body {
   background-color: #F9F6EE;
   color: #181818;
-  animation-name: example;
-  animation-duration: 4s;
   font-family: 'Poppins', sans-serif;
   margin-top: 8vh;
   margin-bottom: 8vh;
