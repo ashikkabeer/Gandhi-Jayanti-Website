@@ -2,6 +2,8 @@ body {
     background-color: #F9F6EE;
     color: #181818;
     font-family: 'Poppins', sans-serif;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
 }
 .title {
     /* display: flex;
@@ -41,5 +43,15 @@ margin: 0px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 80%;
+  }
+  .border {
+    border-width: min-content;
+  }
+  .subHeading {
+font-size: 5vh;
+  }
+  .line {
+    border-bottom: 1px solid #888;
+    width: 80%;
   }
